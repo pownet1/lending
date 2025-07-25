@@ -43,20 +43,19 @@
     }
 
     @keyframes fadeImages {
-      0%   { opacity: 0; }
-      10%  { opacity: 1; }
-      45%  { opacity: 1; }
-      55%  { opacity: 0; }
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      45% { opacity: 1; }
+      55% { opacity: 0; }
       100% { opacity: 0; }
     }
-
 
     .overlay {
       position: fixed;
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(0,0,0,0.7), #000);
+      background: linear-gradient(135deg, rgba(0,0,0,0.5), #000);
       z-index: -1;
     }
 
@@ -99,19 +98,22 @@
       background: #e02d5c;
     }
 
-    .banner {
+    .banner-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-top: 2rem;
     }
 
-    .banner img {
-      width: 280px;
+    .banner-row img {
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
       cursor: pointer;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
       transition: transform 0.2s;
     }
 
-    .banner img:hover {
+    .banner-row img:hover {
       transform: scale(1.05);
     }
 
@@ -131,26 +133,34 @@
     <p>ViceHub verbindet Singles in Deutschland. Völlig kostenlos & anonym.</p>
     <button class="cta-btn" onclick="showOffer()">Jetzt entdecken</button>
 
-<div class="banner">
-  <a href="https://t.mbdaad.link/382846/7336?bo=2753,2754,2755,2756&popUnder=true&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
-    <img src="https://www.imglnkx.com/9946/DAT-460_DESIGN-23859_5_300250.gif" width="300" height="250" alt="Banner Ad" />
-  </a>
-</div>
-
+    <div class="banner-row">
+      <a href="https://t.mbdaad.link/382846/7336?bo=2753,2754,2755,2756&popUnder=true&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
+        <img src="https://www.imglnkx.com/9946/DAT-460_DESIGN-23859_5_300250.gif" width="300" height="250" />
+      </a>
+      <a href="https://t.mbdaad.link/382846/7809/0?bo=2753,2754,2755,2756&file_id=631519&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
+        <img src="https://www.imglnkx.com/7809/ADV-21652_DESIGN-21652_300100.jpg" width="300" height="100" />
+      </a>
+      <a href="https://t.mbdaad.link/382846/7466/0?bo=2753,2754,2755,2756&file_id=625434&po=6456&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
+        <img src="https://www.imglnkx.com/7466/DAT-460_DESIGN-23859_2_300100.gif" width="300" height="100" />
+      </a>
+    </div>
+  </div>
 
   <footer>ViceHub.fun &copy; 2025</footer>
 
+  <!-- PopIn Chat Style Popup -->
   <script src="https://crxcr1.com/popin/latest/popin-min.js"></script>
   <script>
-    function showOffer() {
-      var crakPopInParamsOverlay = {
-        url: 'https://t.mbdaad.link/382846/6727?bo=2753,2754,2755,2756&popUnder=true&aff_sub5=SF_006OG000004lmDN',
-        decryptUrl: false,
-        contentType: 'overlay',
-        coverOverlay: true,
-        expireDays: 0.01
-      };
-    }
+    var crakPopInParamsOverlay = {
+      url: 'https://t.mbdaad.link/382846/7460?bo=2753,2754,2755,2756&popUnder=true&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0019',
+      decryptUrl: false,
+      contentType: 'overlay',
+      coverOverlay: true,
+      expireDays: 0.01
+    };
   </script>
+
+  <!-- Fake Chat Widget -->
+  <script defer src="https://crxcr1.com/cams-widget-ext/im_jerky?lang=en&mode=prerecorded&outlinkUrl=https://t.mbsrv2.com/382846/7635/0?bo=3511%2C3512%2C3521%2C3522&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0018"></script>
 </body>
 </html>
